@@ -1,0 +1,191 @@
+@import url('htpps://fonts.googleapis.com/css?family+poppins:200,300,400,500,600,700,800,900&display=swap');
+
+section
+{
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #ECF2FF;
+}
+
+.wes{
+	margin-left: 175px;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+                        "gambar1 text1"
+                        "text2 gambar2"
+                        "gambar3 text3";
+    grid-template-columns: auto auto;
+}
+
+gambar1 {
+    grid-area: gambar1;
+    padding-left: 125px;
+    height: 9cm;
+}
+
+text1 {
+    grid-area: text1;
+    height: 9cm;
+    padding-top: 50px;
+}
+
+text2 {
+    grid-area: text2;
+    padding-left: 125px;
+    padding-top: 75px;
+    height: 9cm;
+}
+
+gambar2 {
+    grid-area: gambar2;
+    height: 9cm;
+}
+
+gambar3 {
+    grid-area: gambar3;
+    padding-left: 125px;
+    height: 9cm;
+}
+
+text3 {
+    grid-area: text3;
+    height: 9cm;
+    padding-top: 50px;
+}
+
+.style_gambar1 {
+    width: 300px;
+    height: 300px;
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+
+.style_gambar2 {
+    width: 300px;
+    height: 300px;
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+
+.style_text {
+    color: Black;
+}
+
+.style_text2 {
+    line-height: 1.6;
+    color: Black;
+}
+
+.content
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content .textBox
+{
+	position: relative;
+	max-width:600px;
+}
+
+.content .textBox h2
+{
+	color: Black;
+	font-size: 4em;
+	line-height: 1.4em;
+	font-weight: 350;
+}
+
+.content .textBox h2 span
+{
+	color: Black;
+	font-size: 1.1em;
+	font-weight: 350;
+}
+
+.content .textBox p
+{
+	color: Black;
+}
+
+.content .textBox a
+{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 8px 20px;
+	background: #017143;
+	color: #fff;
+	border-radius: 40px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.content .imgBox
+{
+	width: 600px;
+	display: flex;
+	justify-content; flex-end;
+	padding-right: 50px;
+	margin-top:50px;
+}
+
+.content .imgBox img
+{
+	max-width:340px;
+}
+
+.thumb
+{
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	display: flex;
+}
+
+.thumb li
+{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.thumb li:hover
+{
+	transform: translateY(-15px);
+}
+
+.thumb li img
+{
+	max-width: 60px;
+}
+
+.circle
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #E5D1FA;
+	clip-path: circle(600px at right );
+}
+
+p {
+	line-height: 1.6;
+}
